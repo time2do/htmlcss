@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기 소개 - 학력사항</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            text-align:center;
+           
+            
+        }
+        td,th{
+            border:1px solid #ccc;
+            height:40px;
+            padding:5px 10px 5px 10px; /*top,right,bottom,left,
+            상하 혹은 좌우 같을시 한번만 표시-5px 10px, 4면 같을땐 한번만 표시-10px*/
+        }
+        thead{
+            background-color: #eee;
+        
+        }
+        caption{
+            line-height:2;
+            font-weight: bold;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Education</h2>
+<table>
+    <caption>학력 사항</caption>
+    <thead>
+        <tr>
+            <th>출신학교</th>
+            <th>전공</th>
+            <th>기간</th>
+            <th>구분</th>
+        </tr>
+    </thead>
+    <!-- th쓰면 자동으로 굵어짐 -->
+    <tbody>
+        <tr>
+            <td>한강대학교</td>
+            <td>소프트웨어학과</td>
+            <td>2010.3 ~ 2016.2</td>
+            <td>졸업</td>
+        </tr>
+        <tr>
+            <td>한강고등학교</td>
+            <td>이과계열</td>
+            <td>2007.3 ~ 2010.2</td>
+            <td>졸업</td>
+        </tr>
+
+    </tbody>
+    <!-- tfoot는 합계같은거 낼때 사용함 -->
+</table>
+
+
+
+
+</body>
+</html>

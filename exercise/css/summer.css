@@ -1,0 +1,15 @@
+body{
+    background-color: rgb(223, 198, 202);
+}
+h2{
+    color:rgb(29, 158, 245);
+}
+
+p{
+    color:rgb(56, 56, 56);
+    font-style:italic; /*기울어진 서체*/
+    font-family: 궁서;
+    font-size: 18px;
+    line-height: 1.5; /*2로 하면 글짜 한개 크기*/
+
+}

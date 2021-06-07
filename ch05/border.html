@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테두리</title>
+    <style>
+        div{
+            width: 200px; 
+            height: 100px;
+            border-style: solid;
+            border-color: rgb(199, 199, 199);
+            
+        } /*공통 부분은 div로 묶는다*/
+        .box1{
+            border-width: 2px; /*픽셀은 고정크기다*/
+            background-color: orange;
+            margin: 20px;
+            
+        }
+        .box2{
+            border-width: 2px 5px;  
+            background-color: rgb(109, 155, 253);
+            margin: 30px 20px; /*마진은 위 아래 합산되지 않고 큰 숫자로 반영된다*/
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <!-- div는 수직 반영이 기본이다 -->
+</body>
+</html>

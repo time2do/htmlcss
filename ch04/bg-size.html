@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경 이미지 크기 조정</title>
+    <style>
+       div{
+           width: 400px; height: 400px;     
+            background-image: url(images/bg4.jpg); 
+            margin: 15px; /*4면 15px 똑같아서 한번만 씀*/
+            /*div는 공통 사항이라 하나만 씀*/
+        }
+        .bg1{
+            background-size: auto;
+        }
+        .bg2{
+            background-repeat: no-repeat;
+           background-size: contain; /*div에 맞게 사이즈 조정*/
+        }
+        .bg3{
+            background-size: 50%;
+            
+        }
+        .bg4{
+            background-size: cover; /*div여백이 없이 꽉 차게 조정*/
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+    <div class="bg3"></div>
+    <div class="bg4"></div>
+    <!-- body에 div 안 쓰면 페이지에 아무것도 안 나옴 -->
+    <!-- class나 id 다 됨, 다만 id는 한번 쓸수 있기 때문에 class보다 강력함 -->
+</body>
+</html>

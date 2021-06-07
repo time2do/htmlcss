@@ -1,0 +1,15 @@
+h2{
+    color: blue;
+}
+p{
+    color:rgb(13, 138, 86);
+    font-family: 바탕;
+}
+blockquote{
+    color:blueviolet;
+}
+
+h3{ 
+    color:cornflowerblue;
+    font-weight: bold;
+}

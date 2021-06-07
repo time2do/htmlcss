@@ -1,0 +1,17 @@
+#container{
+    border:1px solid #000;
+    width: 600px;
+    padding: 10px;
+}
+
+
+
+body{ /*스타일 상속*/
+    font-size:1.2em; /*1em-16px*/
+}
+h1{
+    color:orange !important; /*!important 쓰면 우선순위가 됨*/
+}
+.redText{
+    color:red;
+}

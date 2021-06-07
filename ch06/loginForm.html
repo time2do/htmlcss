@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 폼 만들기</title>
+</head>
+<body>
+    <h2>로그인</h2>
+    <form action="loginProcess.jpg" method="post">
+        <label for="userid">아이디:</label>
+        <input type="text" id="userid" name="userid"><br>
+
+        <label for="passwd">비밀번호:</label>
+        <input type="password" id="passwd" name="passwd"><br>
+
+        <input type="submit" value="로그인">
+    </form>
+    <!-- form은 사용자의 입력을 서버로 보내는 태그입니다.
+        로그인이나 회원가입, 검색, 쇼핑몰 주문서 등등.
+    action(어디로 넘길것이냐),method(정보를 어떻게 뿌릴 것인가,get/post),enctype 속성이 있다 -->
+        <!-- get : 요청받은 URI의 정보를 검색하여 응답, POST: 요청된 자원을 생성한다. 
+        GET은 정보 노출이 되므로 로그인 페이지에선 사용하지 않는다-->
+</body>
+</html>

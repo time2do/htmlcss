@@ -1,0 +1,76 @@
+
+*{
+    margin:0;
+}
+#container{
+    width: 1100px;
+    margin:0 auto;
+    border: 1px solid #ccc;
+}
+
+header{
+    height: 100px;
+    background-color: #045;
+    
+}
+#logo{
+    width: 250px; height: 100px;
+    float: left;
+    padding: 20px 30px;
+    color: white;
+    text-align: center;
+}
+nav{
+    text-align: center;
+    height: 100px;
+
+    
+}
+#topMenu{
+    list-style: none;
+    margin-top:0;
+   
+}
+#topMenu li{
+    display: inline;
+    line-height: 100px;
+}
+#topMenu li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+
+}
+
+/*본문 영역*/
+.contents{
+    width: 1000px;
+    margin: 50px auto;
+}
+
+main div{
+    margin-top: 10px; /*제목과 이미지 간격*/
+}
+div img{
+    float:left;
+    margin-right:50px;
+    border-radius: 20px;
+}
+div p{
+    line-height: 2em;
+}
+
+/* footer 영역*/
+
+footer{
+    height: 100px;
+    border-top:2px solid #222;
+}
+
+#bottomMenu ul{
+    list-style:none;
+}
+#bottomMenu li{
+    display: inline;
+    padding: 5px 20px;
+}

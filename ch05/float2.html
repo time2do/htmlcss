@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float로 박스 배치하기</title>
+    <style>
+       
+        
+        div{
+            width: 100px; height: 50px;
+            margin: 10px;
+            text-align: center;
+            padding: 10px 20px;
+        }
+    
+        .box1{
+            background-color: teal;
+            float: left;
+         }
+        
+        .box2{
+            background-color: rgb(45, 0, 128);
+            float: left;
+          
+        }
+        .box3{
+            background-color: rgb(224, 255, 49);
+           
+            float:right;
+            
+        }
+        .box4{
+            background-color: rgb(231, 65, 157);
+            
+            clear:both; /*위에 float속성 깨버림,만약 box3이랑 위치가 바뀌면 box3이 box4아래로 배치됨*/
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    
+</body>
+</html>

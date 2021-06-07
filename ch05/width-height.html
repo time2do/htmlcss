@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>너비와 높이 속성</title>
+    <style>
+        div{
+            height: 100px;
+            margin-bottom: 50px;
+        } /*공통 부분은 div로 묶는다*/
+        .box1{
+            width: 400px; /*픽셀은 고정크기다*/
+            background-color: orange;
+            
+        }
+        .box2{
+            width: 50%;  /* %를 쓰면 창 크기에 따라 변한다*/
+            background-color: rgb(109, 155, 253);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표 캡션(설명) 넣기</title>
+    <style>
+        table{
+        
+            width: 300px; height: 100px;
+            border-collapse: collapse;
+            /*셀과 표 테두리 줄 합치기, 셀과 표 테두리 두께 같을땐  border부분 안 써두됨*/
+        }
+        td{
+            border:1px solid #ccc; /*셀 테두리*/
+            text-align: center;
+            background-color: rgb(208, 240, 255);
+            font-weight: bold;
+            font-family: 돋움;
+        }
+        caption{
+            line-height:3;
+            color:rgb(255, 88, 88);
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>프로축구 경기 일정</caption>
+        <tr>
+            <td>울산</td>
+            <td>울산 vs 인천</td>
+        </tr>
+
+        <tr>
+            <td>부산</td>
+            <td>부산 vs 대전</td>
+        </tr>
+
+        <tr>
+            <td>서울</td>
+            <td>서울 vs 강원</td>
+        </tr>
+
+    </table>
+
+ 
+</body>
+</html>

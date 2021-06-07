@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+    <style>
+        #container{
+            width: 700px;
+        }
+        div ul{
+            list-style-type: none;
+            line-height: 2;
+        }
+        fieldset{
+            margin-bottom: 10px;
+        }
+        label{
+            width: 100px;
+            float: left;
+        }
+        input[type="submit"], [type="reset"]{
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <form action="" method="POST">
+        
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul id="shipping">
+                    <li>
+                        <label for="prod">주문 상품</label>
+                        <input type="text" id="prod" value="상품용 3kg" readonly>
+                        <!-- value 글 쓰면 박스에 글이 보이고 readonly쓰면 수정 불가.읽기전용 -->
+                    </li>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" autofocus required>
+                        <!-- 창 열면 바로 마우스 커서 표시가 깜빡임, required 는 필요한 내용이 채워졌는지 검사하는 태그 -->
+                    </li>
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="addr" size="30" required>
+                    </li>
+                    <li>
+                        <label for="email">이메일</label>
+                        <input type="email" id="email" required>
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요" required>
+                        <!-- 박스 안에 흐리게 글짜 표시 -->
+                    </li>
+                    <li>
+                        <label for="d-day">배송일 지정</label>
+                        <input type="date" id="d-day" required>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea cols="40" rows="4" id="memo"></textarea>
+                        <!-- 메모하는 박스란 만들기 -->
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </div>
+        </form>
+
+
+
+    </div>
+</body>
+</html>
