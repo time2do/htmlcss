@@ -117,11 +117,14 @@ footer{
 #bottomMenu li{
     display: inline;
     padding: 5px 20px;
-    border-right:1px solid #eee;
+    border-right:1px solid rgb(184, 184, 184);
 }
 #bottomMenu li a{
     color:black;
     text-decoration: none;
+}
+#bottomMenu ul li:nth-last-child(1){
+    border:none; /*사이트맵 오른쪽 막대기 없애기*/
 }
 #bottomMenu{
     text-align: center;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        
+        ul{
+            list-style: none;
+            
+        }
+        ul li{
+            padding: 10px;
+        
+            display: inline;
+        }
+        ul li a{
+            padding: 15px 30px;
+            text-decoration: none;
+           
+        }
+        ul li a[href]{
+            background-color: rgb(168, 174, 255); /*원하는 속성 선택*/
+            color: white;
+        }
+        ul li a[href]:hover, a[href]:focus  { /*메뉴 링크위에 마우스 댈때 색상 변함,focus는 시각장애인을 위한 tap키로 선택*/
+            color:blue;
+        }
+        ul li a[href]:active{
+            color:black; /*클릭 할때 색 바뀜*/
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인 메뉴</a></li>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+</body>
+</html>
