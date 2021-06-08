@@ -50,6 +50,9 @@ ul {
     line-height: 100px;
     
 }
+#topMenu a:hover{
+    color:#222;
+}
 
 a{
     color: white;
