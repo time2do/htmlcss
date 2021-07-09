@@ -1,0 +1,55 @@
+/*모바일 기준*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(50, 50, 105);
+}
+
+#container{
+    width: 320px;
+    margin: 50px auto;
+}
+
+.card{
+    width: 300px;
+    height: 550px;
+    background-color: white;
+    position: relative;
+    margin: 20px 10px;  /*카드 사이 간격*/
+}
+.word{
+    position: absolute;
+    top: 320px;
+    padding: 15px;
+    /* left: 10px; */
+    text-align: center;
+}
+/* 태블릿 */
+@media screen and (min-width: 768px) {
+    #container{
+        width: 570px;
+    }
+    .card{
+        width: 550px;
+        height: 250px;
+        position: relative;
+    }
+    .word{
+        position: absolute;
+        top: 50px;
+        left: 310px;
+    }
+}
+/*PC버전*/
+@media screen and (min-width: 1710px) {
+    #container{
+        width: 1710px;;
+    }
+    .card{
+        float: left;
+    }
+}
